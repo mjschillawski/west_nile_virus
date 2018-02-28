@@ -18,6 +18,7 @@ Data Science Immersive, General Assembly, 9 March 2018
 | FILENAME |  DESCRIPTION |
 |:---------:|:-----------:|
 | [README](./README.md) | Project description |
+| [Project Notes]](https://docs.google.com/document/d/1Yibk3n7HQaYOhnJOWlWfAm0LW7pbpHwGGwymSviIfRk/edit?usp=sharing) | Notes |
 | [.gitignore](./.gitignore) | gitignore file |
 
 ## Data Description
