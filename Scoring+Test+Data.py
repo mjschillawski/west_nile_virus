@@ -2,6 +2,9 @@
 # coding: utf-8
 
 # # Scoring Data
+# ### 1.1 Import
+import sys
+sys.stdout=open("log.txt","w")
 
 import numpy as np
 import pandas as pd
@@ -369,3 +372,4 @@ predictions.rename(columns={0:'WnvPresent'},inplace=True)
 path = '/Users/mjschillawski/Google Drive/Data/generalassembly/projects/west_nile_virus/assets/output'
 predictions.to_csv(path+'predictions_'+model_name+'.csv')
 
+sys.stdout.close()

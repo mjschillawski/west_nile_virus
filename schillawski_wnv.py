@@ -8,6 +8,9 @@
 # ## 1. Setup
 
 # ### 1.1 Import
+import sys
+sys.stdout=open("log.txt","w")
+
 
 import numpy as np
 import pandas as pd
@@ -776,3 +779,5 @@ gb = [gb_models,gb_scores,gb_probas,gb_preds,gb_metrics,X_trains,X_tests,y_train
 for i,val in enumerate(gb):
     with open(str(i)+'.pickle','wb') as file_handle:
         pickle.dump(val,file_handle,protocol=0)
+
+sys.stdout.close()
