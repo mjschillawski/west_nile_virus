@@ -222,7 +222,6 @@ from haversine import haversine
 print('starting...')
 
 def distance_calc(i): 
-    distance_binary = []
     
     temp_lat = testtrapsweather.at[i,'Latitude']
     temp_long = testtrapsweather.at[i,'Longitude']
@@ -238,7 +237,6 @@ def distance_calc(i):
     return dists
 
 def time_calc(i): 
-    time_binary = []
         
     # calculate time since spray
     time_since_spray = testtrapsweather.at[i,'Date'] - test_spray['Date']
@@ -283,9 +281,6 @@ binary.shape
 
 #THIS IS A COMPUTATIONALLY INTENSIVE CELL
 # create a bunch of dummy variables to evaluate decaying spray effect
-
-values = []
-
 
 inputs = testtrapsweather.index
 
